@@ -15,7 +15,7 @@ public class A02_BootRestController {
 
 	@Autowired(required=false)
 	private A01_Service service;
-	
+	// RestController : 객체형으로 return json데이터 출력.
 	// 데이터 호출 
 	// http://localhost:7050/empRestData
 	@GetMapping("/empRestData")

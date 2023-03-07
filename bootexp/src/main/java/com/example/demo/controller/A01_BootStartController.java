@@ -22,6 +22,7 @@ public class A01_BootStartController {
 				service.getEmpList());
 		return "jsonView";
 	}
+	// http://localhost:7050/empList
 	// 초기화면 로딩 처리
 	@GetMapping("/empList")
 	public String empList() {
