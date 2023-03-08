@@ -15,6 +15,8 @@ public class A01_BootStartController {
 	
 	// 데이터 호출 
 	// http://localhost:7050/empData
+	// 웹화면에서는 보이지 않고, ajax로 호출할 때, 데이터를
+	// 전송 해준다.
 	@GetMapping("/empData")
 	public String list(Model d) {
 		

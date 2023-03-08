@@ -17,6 +17,7 @@ public class A02_BootRestController {
 	private A01_Service service;
 	// RestController : 객체형으로 return json데이터 출력.
 	// 데이터 호출 
+	// 웹화면에서 json 형식으로된 데이터를 확인할 수 있다.
 	// http://localhost:7050/empRestData
 	@GetMapping("/empRestData")
 	public List<Emp> getEmpList(){

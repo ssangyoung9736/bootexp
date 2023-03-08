@@ -17,6 +17,11 @@
 		var vm = new Vue({
 			el:".container",
 			data:{msg:"사원정보 리스트",empList:[]},
+			created:function(){
+				// vue객체가 생성되는 초기화면에서
+				// 해당 기능 메서드 호출하여 데이터 리스트처리
+				this.search();
+			},
 			methods:{
 				search:function(){
 					var vm = this
@@ -27,6 +32,8 @@
 						url:"/empData",					
 					}).then((res)=>{
 						console.log("사원정보")
+						// res.data : json데이터를 가져온다.
+						// empList : 모델 데이터로 선언된 내용..
 						console.log(res.data.empList)
 						vm.empList = res.data.empList
 					}).catch(errr=>{
