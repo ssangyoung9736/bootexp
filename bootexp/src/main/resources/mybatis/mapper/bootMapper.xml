@@ -5,7 +5,7 @@ PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
 <mapper namespace="com.example.demo.dao.A01_Dao">
 	<!-- public List<Emp> getEmpList();-->
 	<select id="getEmpList" resultType="emp">
-		select * from emp
+		select * from EMP
 		
 	</select>
 </mapper>
